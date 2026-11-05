@@ -1,0 +1,217 @@
+# Draft corpus titles. Review, prune and add. One title per line; '#' lines are themes.
+
+# derivatives (43)
+Black–Scholes model
+Option (finance)
+Call option
+Put option
+Binomial options pricing model
+Greeks (finance)
+Delta neutral
+Implied volatility
+Volatility (finance)
+Volatility smile
+Put–call parity
+Futures contract
+Forward contract
+Swap (finance)
+Interest rate swap
+Credit default swap
+Forward rate agreement
+Convertible bond
+Barrier option
+Asian option
+Option style
+Exotic option
+Heston model
+Local volatility
+SABR volatility model
+Black model
+Vasicek model
+Cox–Ingersoll–Ross model
+Hull–White model
+Risk-neutral measure
+Arbitrage
+Arbitrage pricing theory
+Fundamental theorem of asset pricing
+Girsanov theorem
+Feynman–Kac formula
+Monte Carlo methods in finance
+Hedge (finance)
+Margin (finance)
+Moneyness
+Dividend
+Short (finance)
+Leverage (finance)
+Exercise (options)
+
+# risk (27)
+Value at risk
+Expected shortfall
+Coherent risk measure
+Tail risk
+Stress test (financial)
+Backtesting
+Credit risk
+Market risk
+Liquidity risk
+Operational risk
+Basel III
+Systematic risk
+Specific risk
+Beta (finance)
+Drawdown (economics)
+Risk management
+Financial risk
+Credit rating
+Copula (statistics)
+Extreme value theory
+Fat-tailed distribution
+Black swan theory
+Kelly criterion
+Autoregressive conditional heteroskedasticity
+Risk measure
+Default (finance)
+Basel II
+
+# portfolio (29)
+Modern portfolio theory
+Capital asset pricing model
+Efficient frontier
+Sharpe ratio
+Sortino ratio
+Treynor ratio
+Jensen's alpha
+Information ratio
+Alpha (finance)
+Diversification (finance)
+Black–Litterman model
+Risk parity
+Fama–French three-factor model
+Efficient-market hypothesis
+Capital market line
+Security market line
+Harry Markowitz
+Post-modern portfolio theory
+Asset allocation
+Rebalancing investments
+Smart beta
+Momentum investing
+Factor investing
+Portfolio optimization
+Hedge fund
+Mutual fund
+Exchange-traded fund
+Active management
+Passive management
+
+# stochastic (29)
+Brownian motion
+Wiener process
+Geometric Brownian motion
+Itô's lemma
+Itô calculus
+Stochastic calculus
+Stochastic differential equation
+Markov chain
+Poisson point process
+Ornstein–Uhlenbeck process
+Lévy process
+Random walk
+Martingale (probability theory)
+Stochastic volatility
+Central limit theorem
+Law of large numbers
+Normal distribution
+Log-normal distribution
+Monte Carlo method
+Variance reduction
+Stochastic process
+Jump process
+Mean reversion (finance)
+Cointegration
+Time series
+Kalman filter
+Bootstrapping (statistics)
+Maximum likelihood estimation
+Autocorrelation
+
+# microstructure (27)
+Market microstructure
+Order book
+Bid–ask spread
+Market maker
+Market liquidity
+High-frequency trading
+Algorithmic trading
+Slippage (finance)
+Dark pool
+Order (exchange)
+Pairs trade
+Statistical arbitrage
+Quantitative analysis (finance)
+Market impact
+Price discovery
+Almgren–Chriss model
+Mathematical finance
+Financial engineering
+Flash crash
+Stock market
+Stock exchange
+Over-the-counter (finance)
+Clearing house (finance)
+Technical analysis
+Behavioral economics
+Behavioural finance
+Central limit order book
+
+# macro (49)
+Inflation
+Deflation
+Stagflation
+Monetary policy
+Fiscal policy
+Interest rate
+Yield curve
+Quantitative easing
+Central bank
+Gross domestic product
+Unemployment
+Phillips curve
+Taylor rule
+Money supply
+Exchange rate
+Purchasing power parity
+Balance of payments
+Business cycle
+Recession
+Keynesian economics
+Monetarism
+Aggregate demand
+IS–LM model
+Real interest rate
+Nominal interest rate
+Fisher equation
+Time value of money
+Net present value
+Discounting
+Bond (finance)
+Yield to maturity
+Duration (finance)
+Bond convexity
+Yield spread
+Risk-free rate
+Libor
+SOFR
+Supply and demand
+Opportunity cost
+Great Recession
+Black Monday (1987)
+2008 financial crisis
+Long-Term Capital Management
+Bretton Woods system
+Gold standard
+Hyperinflation
+Moral hazard
+Adverse selection
+Game theory
