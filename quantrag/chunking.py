@@ -1,5 +1,5 @@
 #this function 
-
+import re
 
 def split_paragraphs(text):
     paragraphs=[]
@@ -31,3 +31,28 @@ def clean_formulas(text):
     if run >= 3:
         kept.append("[formula]")
     return "\n".join(kept)
+
+def make_chunks(paragraphs, max_words):
+    chunks = []
+    current = []
+    count = 0
+    for paragraph in paragraphs:
+        n = len(paragraph.split())
+        if count + n > max_words and current:
+            chunks.append("\n\n".join(current))
+            current = []
+            count = 0
+        current.append(paragraph)
+        count = count + n
+    if current:
+        chunks.append("\n\n".join(current))
+    return chunks
+
+def split_long_paragraphs(paragraphs, max_words):
+    result = []
+    for paragraph in paragraphs:
+        if len(paragraph.split()) > max_words:
+            result.extend(re.split(r"(?<=[.!?])\s+", paragraph))
+        else:
+            result.append(paragraph)
+    return result
