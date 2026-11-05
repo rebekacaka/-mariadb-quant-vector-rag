@@ -1,4 +1,3 @@
-#this function 
 import re
 
 def split_paragraphs(text):
@@ -56,3 +55,47 @@ def split_long_paragraphs(paragraphs, max_words):
         else:
             result.append(paragraph)
     return result
+
+#carry the current heading as a running variable instead of building a full section tree,
+#because it's simple and enough to prefix each chunk with Title > Section, at the cost of losing the nesting of subsections.
+
+def sectioned_paragraphs(text):
+    heading = "Introduction"
+    result = []
+    for block in text.split("\n\n"):
+        lines = block.strip().split("\n")
+        while lines and lines[0].startswith("=="):
+            heading = lines[0].strip("= ")
+            lines = lines[1:]
+        body = "\n".join(lines).strip()
+        if body != "":
+            result.append((heading,body))
+    return result
+
+
+SKIP_SECTIONS = {"References", "External links", "See also", "Further reading",
+                 "Notes", "Sources", "Bibliography"}
+
+
+def chunk_article(title, text, max_words):
+    text = clean_formulas(text)
+    sections = []
+    for heading, paragraph in sectioned_paragraphs(text):
+        if heading in SKIP_SECTIONS:
+            continue
+        if sections and sections[-1][0] == heading:
+            sections[-1][1].append(paragraph)
+        else:
+            sections.append((heading, [paragraph]))
+    chunks = []
+    for heading, paragraphs in sections:
+        paragraphs = split_long_paragraphs(paragraphs, max_words)
+        for piece in make_chunks(paragraphs, max_words):
+            chunks.append({
+                "title": title,
+                "section": heading,
+                "text": title + " > " + heading + "\n\n" + piece,
+            })
+    return chunks
+
+
